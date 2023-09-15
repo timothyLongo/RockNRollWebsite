@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head id = "shopHead">
+		<title>Uncle Si's ROCK N ROLL WORLD</title>
+		<link rel="stylesheet" href="site.css"/>
+		<script type = "text/javascript" src = "script.js">
+		</script>
+	</head>
+	<body id = "shopBody">
+		<section class = "navigationHeader">
+				<a href = "index.html">HOME</a>
+				<div class = "dropdown">
+					<button onclick = "myFunction()" class = "dropButton">LESSONS</button>
+					<div id = "myDropdown" class = "dropdown-content">
+						<a href = "WelcomeToTheJungle.html">WELCOME TO THE JUNGLE</a>
+						<a href = "BlackHoleSun.html">BLACK HOLE SUN</a>
+						<a href = "SmellsLikeTeenSpirit.html">SMELLS LIKE TEEN SPIRIT</a>
+					</div>
+				</div>
+				<a href = "About.html">ABOUT</a>
+		</section>
+		<div id = "shopTitle">
+			<h1>SHOP</h1>
+		</div>
+		<div id = "theTable">
+			<table>
+				<tr>
+					<th></th>
+					<th>SI'S FINGERSTYLE LESSON</th>
+				</tr>
+				<tr>
+					<td>Is it fun?</td>
+					<td><span>&#x2713;</span></td>
+				</tr>
+				<tr>
+					<td>Will I enjoy myself?</td>
+					<td><span>&#x2713;</span></td>
+				</tr>
+				<tr>
+					<td>Will I learn something new?</td>
+					<td><span>&#x2713;</span></td>
+				</tr>
+				<tr>
+					<td>Will I be cooler because of it?</td>
+					<td><span>&#x2713;</span></td>
+				</tr>
+			</table>
+		</div>
+		<div id = "checkboxIntro">
+			<h1>HIT CHECK BELOW &#8595;</h1>
+		</div>
+		<div id = "shopSongs">
+		<!-- FOR TESTING PURPOSES TO MAKE SURE THE SERVER 
+			RECIEVES THE RIGHT INFORMATION
+		<form action = "http://wilder.azurewebsites.net/echo" method="POST" id = "theForm">
+		-->
+		<form action = "index.html" id = "theForm">
+			<div id =theFormTop>
+				<input type = "checkbox" id = "song1" name = "WelcomeToTheJungle" value = "bought">
+				<label for = "song1"><img src = "pngs/jungleThumbnail.png"></label><br>
+				<input type = "checkbox" id = "song2" name = "BlackHoleSun" value = "bought">
+				<label for = "song2"><img src = "pngs/sunThumbnail.png"></label><br>
+				<input type = "checkbox" id = "song3" name = "ItSmellsLikeTeenSpirit" value = "bought">
+				<label for = "song3"><img src = "pngs/spiritThumbnail.png"></label><br>
+			</div>
+			<div id ="formBottom">
+				<label for = "creditCard" id = "creditLabel">Credit Card Number: </label>
+				<input type = "text" id = "creditId" name = "creditName" minlength = "13" maxlength = "19"><br>
+				<label for = "creditCVV" id = "creditCVVLabel">CVV Number: </label>
+				<input type = "text" id = "creditCVVId" name = "creditCVVName" minlength = "3" maxlength = "3"><br>
+				<label for = "creditEx" id = "creditExLabel">Expiration Date: </label>
+				<input type = "text" id = "creditExId" name = "creditExName" minlength = "3" maxlength = "5"><br>
+				<label for = "email" id = "emailLabel">Email: </label>
+				<input type = "text" id = "emailId" name = "emailName" minlength = "10" maxlength = "25"><br>
+				<input id = "submitButton" type = "submit" value = "BUY">
+			</div>
+		</form>
+		</div>
+	</body>
+</html>
